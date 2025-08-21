@@ -7,9 +7,15 @@ import Layout from '../layouts/Layout.astro';
 
 import { MY_NON_SECRET_VALUE } from 'astro:env/client';
 import { MY_SECRET_VALUE } from 'astro:env/server';
+import { ALL_CONTEXTS_ENV_VAR } from 'astro:env/server';
 
 console.log('astro:env MY_NON_SECRET_VALUE:', MY_NON_SECRET_VALUE);
 console.log('astro: env MY_SECRET_VALUE:', MY_SECRET_VALUE);
+console.log('astro: env ALL_CONTEXTS_ENV_VAR:', ALL_CONTEXTS_ENV_VAR);
+console.log(
+  'import.meta.env ALL_CONTEXTS_ENV_VAR:',
+  import.meta.env.ALL_CONTEXTS_ENV_VAR
+);
 ---
 
 <Layout>

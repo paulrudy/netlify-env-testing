@@ -19,6 +19,10 @@ export default defineConfig({
         context: 'client',
         access: 'public',
       }),
+      ALL_CONTEXTS_ENV_VAR: envField.string({
+        context: 'server',
+        access: 'secret',
+      }),
     },
   },
 });
